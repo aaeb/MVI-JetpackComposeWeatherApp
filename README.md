@@ -1,1 +1,2 @@
-# The app under development, I am keeping update with new features and functionalities after applying the most recent Packages and lib.
+# MVI-JetpackComposeWeatherApp
+Use MVI architecure design pattern to build a weather app with JetPack Compose UI
