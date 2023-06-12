@@ -16,7 +16,6 @@ class WeatherRepoImpl @Inject constructor(private val weatherApi: WeatherApi) : 
             Resource.Success(
                 data = weatherApi.getWeatherData(lat, long).toWeatherInfo()
             )
-
         } catch (e: Exception) {
             Resource.Error(e.message ?: "An unknown error occurred")
         }
