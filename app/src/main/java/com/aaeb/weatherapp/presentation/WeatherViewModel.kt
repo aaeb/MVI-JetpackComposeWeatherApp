@@ -9,6 +9,7 @@ import com.aaeb.weatherapp.domain.location.LocationTracker
 import com.aaeb.weatherapp.domain.repository.WeatherRepository
 import com.aaeb.weatherapp.domain.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -19,7 +20,6 @@ class WeatherViewModel @Inject constructor(
 ) : ViewModel() {
 
      var state by mutableStateOf(WeatherState())
-        private set
 
     fun loadWeatherInfo() {
         viewModelScope.launch {
